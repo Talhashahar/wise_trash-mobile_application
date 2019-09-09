@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:id="@+id/total_bins_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:orientation="horizontal">
+
+        <com.msl.talfinalproject.ui.FontableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Bins Count:"
+                app:font_style="open_sans_hebrew_italic"
+                android:textColor="#000000"
+                android:textSize="24dp"/>
+
+        <com.msl.talfinalproject.ui.FontableTextView
+                android:id="@+id/count_bins"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                tools:text="5"
+                android:textSize="24dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/capacity_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_bins_title"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:orientation="horizontal">
+
+        <com.msl.talfinalproject.ui.FontableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Total Weight:"
+                app:font_style="open_sans_hebrew_italic"
+                android:textColor="#000000"
+                android:textSize="24dp"/>
+
+        <com.msl.talfinalproject.ui.FontableTextView
+                android:id="@+id/total_weight"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                tools:text="5"
+                android:textSize="24dp"/>
+    </LinearLayout>
+
+
+    <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/capacity_title"
+            tools:context=".MainActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+</RelativeLayout>

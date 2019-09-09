@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/register_container"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_alignParentBottom="true">
+
+        <FrameLayout
+                android:id="@+id/registration_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/button_with_arrow"/>
+
+            <com.msl.talfinalproject.ui.FontableTextView
+                    android:id="@+id/text_reg_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LOG IN"
+                    android:textColor="#ffffff"
+                    android:textSize="30.7dp"
+                    app:font_style="open_sans_hebrew_bold_italic"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@id/register_container"
+            android:background="@drawable/main_bg">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26.7dp"
+                android:layout_alignParentTop="true">
+
+            <ImageButton
+                    android:id="@+id/menu_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="26.7dp"
+                    android:padding="10dp"
+                    android:background="@null"
+                    android:src="@drawable/white_close_button"/>
+
+            <com.msl.talfinalproject.ui.FontableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FindMe"
+                    android:textSize="26.7dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#ffffff"
+                    app:font_style="open_sans_hebrew_bold_italic"/>
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="33.3dp"
+                android:layout_marginRight="33.3dp"
+                android:textColorHint="#8DFFFFFF"
+                android:theme="@style/SignUpUserTextLabel"
+                app:hintTextAppearance="@style/SignUpUserTextLabel">
+
+            <com.msl.talfinalproject.ui.FontableEditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="Email address or Username"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="7dp"
+                    android:textColor="#ffffff"
+                    android:textColorHighlight="#ffffff"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#ffffff"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20dp"
+                    app:font_style="open_sans_hebrew_regular"/>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1.3dp"
+                  android:background="#ffffff"
+                  android:layout_marginTop="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="33.3dp"
+                android:layout_marginRight="33.3dp"
+                android:textColorHint="#8DFFFFFF"
+                android:theme="@style/SignUpUserTextLabel"
+                app:hintTextAppearance="@style/SignUpUserTextLabel">
+
+            <com.msl.talfinalproject.ui.FontableEditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="7dp"
+                    android:textColor="#ffffff"
+                    android:textColorHighlight="#ffffff"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#ffffff"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20dp"
+                    app:font_style="open_sans_hebrew_regular"/>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1.3dp"
+                  android:background="#ffffff"
+                  android:layout_marginTop="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

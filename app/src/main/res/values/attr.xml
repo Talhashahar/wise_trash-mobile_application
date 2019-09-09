@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="font_style" format="enum">
+        <enum name="open_sans_hebrew_bold" value="0" />
+        <enum name="open_sans_hebrew_bold_2" value="1"/>
+        <enum name="open_sans_hebrew_bold_italic" value="2"/>
+        <enum name="open_sans_hebrew_extra_bold" value="3"/>
+        <enum name="open_sans_hebrew_extra_bold_italic" value="4"/>
+        <enum name="open_sans_hebrew_italic" value="5"/>
+        <enum name="open_sans_hebrew_light" value="6"/>
+        <enum name="open_sans_hebrew_light_2" value="7"/>
+        <enum name="open_sans_hebrew_light_italic" value="8"/>
+        <enum name="open_sans_hebrew_regular" value="9"/>
+    </attr>
+
+    <declare-styleable name="FontableEditText">
+        <attr name="font_style" />
+    </declare-styleable>
+
+    <declare-styleable name="FontableTextView">
+        <attr name="font_style" />
+    </declare-styleable>
+
+    <declare-styleable name="FontableButton">
+        <attr name="font_style" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer"/>
+        <attr name="rv_rippleDuration" format="integer"/>
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomRadioButtonGroup">
+        <attr name="buttons_for_row" format="integer"/>
+        <attr name="radio_button_behavior" format="boolean"/>
+        <attr name="check_button_behavior" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+        <attr name="dateFormat" format="string"/>
+        <attr name="useExternalCalendarButtons" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="androidWheelView">
+        <attr name="awv_textsize" format="integer" />
+        <attr name="awv_lineSpace" format="float" />
+        <attr name="awv_centerTextColor" format="integer" />
+        <attr name="awv_outerTextColor" format="integer" />
+        <attr name="awv_dividerTextColor" format="integer" />
+        <attr name="awv_itemsVisibleCount" format="integer" />
+        <attr name="awv_isLoop" format="boolean" />
+        <attr name="awv_initialPosition" format="integer" />
+        <attr name="awv_scaleX" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="StepView">
+        <attr name="step_orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="step_direction">
+            <enum name="rtl" value="0"/>
+            <enum name="ltr" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

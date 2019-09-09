@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wise Trash</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="source">home</string>
+    <string name="destination">destination</string>
+</resources>

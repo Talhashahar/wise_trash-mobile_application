@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:background="@drawable/dialog_wrong_input_bg"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+
+
+
+    <RelativeLayout
+            android:id="@+id/button_dismiss"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/dialog_trash_event_button">
+
+        <com.msl.talfinalproject.ui.FontableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:text="OK"
+                android:layout_centerInParent="true"
+                app:font_style="open_sans_hebrew_regular"/>
+
+    </RelativeLayout>
+
+
+    <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/button_dismiss"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp">
+
+        <RadioButton
+                android:id="@+id/broken_trash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Broken Trash"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"
+                android:textSize="24dp"/>
+
+        <RadioButton
+                android:id="@+id/missing_trash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Missin Trash"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"
+                android:textSize="24dp"/>
+
+        <RadioButton
+                android:id="@+id/good_trash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Good Trash"
+                android:textColor="#000000"
+                android:textSize="24dp"/>
+    </RadioGroup>
+</RelativeLayout>
